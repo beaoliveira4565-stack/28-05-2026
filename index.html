@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Almanaque Biotônico Fontoura 1968 </title>
+
+  <!-- FONTES -->
+
+  <link rel="preconnect" href="site.png">
+
+  <style>
+
+    /* RESET */
+
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+    }
+
+    /* BODY */
+
+    body{
+
+      font-family:'Roboto', sans-serif;
+
+      background-image:url('fundosite.jpg');
+
+      background-size:cover;
+      background-position:center;
+      background-attachment:fixed;
+
+      color:#3a2a1a;
+
+      min-height:100vh;
+    }
+
+    /* ESCURECER FUNDO */
+
+    body::before{
+
+      content:"";
+
+      position:fixed;
+
+      top:0;
+      left:0;
+
+      width:100%;
+      height:100%;
+
+      background:rgba(0,0,0,0.45);
+
+      z-index:-1;
+    }
+
+    /* HEADER */
+
+    header{
+
+      background:rgba(122, 24, 24, 0.92);
+
+      text-align:center;
+
+      padding:40px 20px;
+
+      border-bottom:8px solid #d4af37;
+    }
+
+    header h1{
+
+      font-family:'Cinzel', serif;
+
+      color:#f7e6b3;
+
+      font-size:3rem;
+
+      margin-bottom:10px;
+    }
+
+    header p{
+
+      color:#fff2cc;
+
+      letter-spacing:2px;
+
+      margin-bottom:25px;
+    }
+
+    /* BOTÃO TRANSFORMAR */
+
+    #transformar{
+
+      background:#d4af37;
+
+      color:#5a1d1d;
+
+      border:none;
+
+      padding:15px 30px;
+
+      font-size:1rem;
+
+      font-weight:bold;
+
+      border-radius:10px;
+
+      cursor:pointer;
+
+      transition:0.3s;
+    }
+
+    #transformar:hover{
+
+      background:#f1c84d;
+
+      transform:scale(1.05);
+    }
+
+    /* CONTAINER PRINCIPAL */
+
+    .container-principal{
+
+      width:90%;
+
+      max-width:1200px;
+
+      margin:50px auto;
+
+      display:grid;
+
+      grid-template-columns:repeat(auto-fit, minmax(300px, 1fr));
+
+      gap:30px;
+    }
+
+    /* CARDS */
+
+    .card{
+
+      background:#fff8e7;
+
+      border:3px solid #c8a951;
+
+      border-radius:14px;
+
+      overflow:hidden;
+
+      box-shadow:5px 5px 20px rgba(0,0,0,0.4);
+
+      transition:0.3s;
+    }
+
+    .card:hover{
+
+      transform:translateY(-10px);
+    }
+
+    /* IMAGENS */
+
+    .card img{
+
+      width:100%;
+
+      height:250px;
+
+      object-fit:cover;
+    }
+
+    /* CONTEÚDO */
+
+    .conteudo{
+
+      padding:20px;
+    }
+
+    .conteudo h2{
+
+      font-family:'Cinzel', serif;
+
+      color:#7b1e1e;
+
+      margin-bottom:15px;
+    }
+
+    .conteudo p{
+
+      line-height:1.7;
+
+      margin-bottom:20px;
+    }
+
+    /* BOTÃO CARD */
+
+    .btn{
+
+      display:inline-block;
+
+      background:#7b1e1e;
+
+      color:white;
+
+      padding:12px 20px;
+
+      border-radius:8px;
+
+      text-decoration:none;
+
+      transition:0.3s;
+    }
+
+    .btn:hover{
+
+      background:#a52a2a;
+    }
+
+    /* RESPONSIVO */
+
+    @media(max-width:768px){
+
+      header h1{
+
+        font-size:2rem;
+      }
+
+    }
+
+  </style>
+
+</head>
+
+<body>
+
+  <!-- TOPO -->
+
+  <header>
+
+    <h1 id="titulo">
+      Almanaque Biotônico Fontoura
+    </h1>
+
+    <p id="subtitulo">
+      “Tomou Biotônico… agora aguenta!”
+    </p>
+
+    <!-- BOTÃO OBRIGATÓRIO -->
+
+    <button id="transformar">
+      Transformar!
+    </button>
+
+  </header>
+
+  <!-- CONTAINER PRINCIPAL -->
+
+  <main class="container-principal">
+
+    <!-- CARD 1 -->
+
+    <section class="card">
+
+      <img id="img1"
+      src="gatinhopreto1968.png"
+      alt="Gato Preto">
+
+      <div class="conteudo">
+
+        <h2 id="titulo1">
+          Gato Preto na Rua
+        </h2>
+
+        <p id="texto1">
+          “Em 1968, dona Alzira parou na esquina ao ver um gato preto atravessar a rua. Preferiu voltar para casa e esperar alguns minutos antes de sair novamente.”
+        </p>
+
+        <a href="#" class="btn">
+          Ler Mais
+        </a>
+
+      </div>
+
+    </section>
+
+    <!-- CARD 2 -->
+
+    <section class="card">
+
+      <img id="img2"
+      src="cuca1968.png"
+      alt="A chegada da Cuca">
+
+      <div class="conteudo">
+
+        <h2 id="titulo2">
+          <p> "A chegada da Cuca"</p>
+        </h2>
+
+        <p id="texto2">
+          “Naquela noite escura, ouviu-se um assobio estranho perto da mata. Pedrinho percebeu que a Cuca estava aprontando mais uma vez.”
+        </p>
+
+        <a href="#" class="btn">
+          Explorar
+        </a>
+
+      </div>
+
+    </section>
+
+    <!-- CARD 3 -->
+
+    <section class="card">
+
+      <img id="img3"
+      src="site.png"
+      alt="Cultura vintage">
+
+      <div class="conteudo">
+
+        <h2 id="titulo3">
+          Biotônico Fontoura
+        </h2>
+
+        <p id="texto3">
+          “Reconstituinte tradicional das famílias brasileiras, recomendado para épocas de fraqueza, cansaço e falta de vigor
+        </p>
+
+        <a href="#" class="btn">
+          Descobrir
+        </a>
+
+      </div>
+
+    </section>
+
+  </main>
+
+  <!-- JAVASCRIPT -->
+
+  <script>
+
+    const botao = document.getElementById("transformar");
+
+    botao.addEventListener("click", function(){
+
+      /* ALTERA TOPO */
+
+      document.getElementById("titulo").innerText =
+      "Almanaque Digital!";
+
+      document.getElementById("subtitulo").innerText =
+      "Nova experiência digital vintage";
+
+      /* ALTERA CARD 1 */
+
+      document.getElementById("titulo1").innerText =
+      "Energia e Vitalidade";
+
+      document.getElementById("texto1").innerText =
+      "O conteúdo foi atualizado com um visual moderno inspirado nos almanaques históricos.";
+
+      /* ALTERA CARD 2 */
+
+      document.getElementById("titulo2").innerText =
+      "Brasil dos Anos 60";
+
+      document.getElementById("texto2").innerText =
+      "A década de 1960 foi marcada por publicidade criativa e cultura popular.";
+
+      /* ALTERA CARD 3 */
+
+      document.getElementById("titulo3").innerText =
+      "Memória Nacional";
+
+      document.getElementById("texto3").innerText =
+      "Os almanaques ajudavam no entretenimento e educação das famílias brasileiras.";
+
+      /* ALTERA COR BOTÃO */
+
+      botao.style.background = "#7b1e1e";
+
+      botao.style.color = "#ffffff";
+
+    });
+
+  </script>
+
+</body>
+</html>
